@@ -1,0 +1,139 @@
+#header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/navbar/header-photo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+#courtain {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#navbar {
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.1);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+}
+
+.left-side-nav {
+    padding-left: 5vw;
+}
+
+.mid-site-nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+}
+
+.right-site-nav {
+    padding-right: 2vw;
+}
+
+ul {
+    padding: 0px;
+    position: relative;
+    bottom: 12px;
+}
+
+li {
+    list-style-type: none;
+    float: left;
+}
+
+.nav-item {
+    line-height: 70px;
+    color: #EEEEEE;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    transition: all 0.2s ease-in;
+    transition-duration: 0.3s;
+    color: #999999;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icon {
+    vertical-align: middle;
+    height: 50px;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+.icon:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    padding: 5px;
+    border: 2px solid white;
+}
+
+#logo:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#space {
+    height: 2000px ;
+}
+
+#motto {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-size: 5em;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+.scrolled {
+    background-color: black !important;
+}
+
+@media(max-width: 868px) {
+
+    .right-site-nav {
+        display: none;
+    }
+
+    .mid-site-nav {
+        padding-right: 25px;
+    }
+
+    .nav-item {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 450px) {
+    .nav-item-list {
+        display: none;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+}
